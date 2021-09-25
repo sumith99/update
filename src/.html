@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const family = [{
+            id: 1,
+            img: "father.png",
+            name: "Aniket",
+            age: "50",
+            address: {
+                pincode: 1234,
+                plotNo: 24
+            },
+            parent: {
+                name: 'suresh',
+                age: 55
+            },
+            contact: {
+                number: "212121"
+            },
+            data: {
+                userdata: "anemy",
+                children: []
+            }
+        }, {
+            id: 2,
+            img: "father2.png",
+            name: "Rushi",
+            age: "502",
+            address: {
+                pincode: 1232224,
+                plotNo: 22224
+            },
+            parent: {
+                name: 'SAMMY',
+                age: 552
+            },
+            contact: {
+                number: "475888745"
+            },
+            data: {
+                userdata: "154456"
+            }
+        }]
+
+        const data = family.map((val) => [Number(val.address.pincode)])[0]
+        console.log(typeof Number(data));
+        let state = data;
+        console.log(state);
+    </script>
+</body>
+
+</html>
